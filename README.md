@@ -1,4 +1,4 @@
-This is the repo for adelyte-boxen.herokuapp.com.
+This is the repo for http://adelyte-boxen.herokuapp.com.
 
 # Our Boxen
 
