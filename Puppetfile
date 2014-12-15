@@ -61,7 +61,7 @@ github "xquartz",     "1.2.1"
 
 github "iterm2",          "1.2.2"
 github "zsh",             "1.0.0"
-github "ohmyzsh",         "1.0.0"
+github "ohmyzsh",         "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
 
 github "sublime_text",    "1.1.0"
 github "postgresapp",     "1.0.0"
