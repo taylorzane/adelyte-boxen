@@ -58,7 +58,7 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
 # Extras added by Taylor
-
+github "osx",             "2.8.0"
 github "iterm2",          "1.2.2"
 github "zsh",             "1.0.0"
 github "ohmyzsh",         "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"

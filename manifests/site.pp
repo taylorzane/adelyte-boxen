@@ -59,6 +59,7 @@ node default {
   include nginx
 
   # extra modules, added by Taylor
+  include osx
   include iterm2::stable
   include iterm2::colors::solarized_dark
   include zsh
