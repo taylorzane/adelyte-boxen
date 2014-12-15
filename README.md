@@ -1,5 +1,9 @@
 This is the repo for http://adelyte-boxen.herokuapp.com.
 
+To permanently fix this, source /opt/boxen/env.sh at the end of your shell's startup file.
+
+Notes: 
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and

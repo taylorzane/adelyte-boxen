@@ -58,6 +58,25 @@ node default {
   include hub
   include nginx
 
+  # extra modules, added by Taylor
+  include iterm2::stable
+  include iterm2::colors::solarized_dark
+  include zsh
+  include ohmyzsh
+  include postgresapp
+  include sublime_text
+  include alfred
+  include vagrant_manager
+  include dropbox
+  include googledrive
+  
+  include chrome
+  include firefox
+  include karabiner
+  include karabiner::login_item
+  include teamviewer
+
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -75,6 +94,9 @@ node default {
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
+  
+
+
   # common, useful packages
   package {
     [
@@ -88,4 +110,29 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # extra module configurations, added by Taylor
+  class { 'ruby::global':
+    version => '2.0.0'
+  }
+
+  ruby_gem { "rails for all rubies":
+    gem          => 'rails',
+    version      => '>= 4.0.0',
+    ruby_version => '*'
+  }
+
+  sublime_text::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+
+  class { 'vagrant':
+    completion => true,
+  }
+
+  
+
+
+
+
 }

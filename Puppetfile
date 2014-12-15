@@ -57,5 +57,28 @@ github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
+# Extras added by Taylor
+
+github "iterm2",          "1.2.2"
+github "zsh",             "1.0.0"
+github "ohmyzsh",         "1.0.0"
+
+github "sublime_text",    "1.1.0"
+github "postgresapp",     "1.0.0"
+
+github "alfred",          "1.4.0"
+
+github "vagrant",         "3.2.0"
+github "vagrant_manager", "0.0.1"
+
+github "karabiner",       "1.0.6"
+
+github "chrome",          "1.2.0"
+github "firefox",         "1.2.3"
+github "googledrive",     "1.0.2"
+github "dropbox",         "1.4.1"
+github "teamviewer",      "1.0.1"
+
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
