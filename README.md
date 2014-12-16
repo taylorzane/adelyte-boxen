@@ -1,6 +1,6 @@
-This is the repo for http://adelyte-boxen.herokuapp.com.
+# Adelyte Boxen
 
-# Our Boxen
+This is the repo for http://adelyte-boxen.herokuapp.com.
 
 ## Getting Started
 
@@ -26,6 +26,7 @@ It should run successfully, and should tell you to source a shell script
 in your environment.
 
 If you do have a `~/.bashrc` or `~/.zshrc`
+(Note:  see if we can automate this task as ZSH will be default shell.)
 
 ``` sh
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
@@ -37,14 +38,12 @@ If that runs cleanly, you're in good shape.
 
 ## What You Get
 
-This template project provides the following by default:
-
+* __Defaults__
 * Homebrew
 * Git
 * Hub
 * dnsmasq w/ .dev resolver for localhost
 * rbenv
-* Full Disk Encryption requirement
 * Node.js 0.6
 * Node.js 0.8
 * Node.js 0.10
@@ -56,3 +55,29 @@ This template project provides the following by default:
 * ack
 * Findutils
 * GNU tar
+* __Extras__
+* iTerm
+* iTerm Solarized Dark Shell Theme
+* ZSH
+* Oh-My-ZSH!
+* Rails (latest 4.x.y release)
+* Postgres.app (works better with Rails than CLI postgres)
+* Sublime Text 3
+* Alfred
+* Vagrant Manager (note: see if vagrant is installed)
+* Dropbox
+* Google Drive Sync
+* Google Chrome
+* Mozilla Firefox
+* Karabiner (used to remap keyboard)
+* TeamViewer
+
+## Future Plans
+* Titanium
+* unified dotfiles
+* per user configs
+* oh-my-ZSH configs/prompts
+* VPN settings
+* repositories to clone
+* ssh config (for easy sshing)
+* more applications per request
