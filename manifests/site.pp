@@ -103,21 +103,4 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
-
-  # extra module configurations, added by Taylor
-  class { 'ruby::global':
-    version => '2.0.0'
-  }
-
-  ruby_gem { 'bundler for all rubies':
-    gem          => 'bundler',
-    version      => '~> 1.0',
-    ruby_version => '*',
-  }
-
-  ruby_gem { "rails for all rubies":
-    gem          => 'rails',
-    version      => '>= 4.0.0',
-    ruby_version => '*'
-  }
 }
