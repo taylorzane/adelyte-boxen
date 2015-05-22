@@ -59,6 +59,7 @@ node default {
   include nginx
 
   # extra modules, added by Taylor
+  include osx
   include iterm2::stable
   include zsh
   include ohmyzsh
