@@ -60,20 +60,13 @@ node default {
 
   # extra modules, added by Taylor
   include iterm2::stable
-  include iterm2::colors::solarized_dark
   include zsh
   include ohmyzsh
   include postgresapp
-  include sublime_text
-  include alfred
-  include vagrant_manager
+
   include dropbox
-  include googledrive
-  
   include chrome
   include firefox
-  include karabiner
-  include karabiner::login_item
   include teamviewer
 
 
@@ -94,7 +87,7 @@ node default {
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
-  
+
 
 
   # common, useful packages
@@ -116,23 +109,15 @@ node default {
     version => '2.0.0'
   }
 
+  ruby_gem { 'bundler for all rubies':
+    gem          => 'bundler',
+    version      => '~> 1.0',
+    ruby_version => '*',
+  }
+
   ruby_gem { "rails for all rubies":
     gem          => 'rails',
     version      => '>= 4.0.0',
     ruby_version => '*'
   }
-
-  sublime_text::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
-  }
-
-  class { 'vagrant':
-    completion => true,
-  }
-
-  
-
-
-
-
 }
