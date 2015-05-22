@@ -38,7 +38,8 @@ If that runs cleanly, you're in good shape.
 
 ## What You Get
 
-* __Defaults__
+#### __Defaults__
+
 * Homebrew
 * Git
 * Hub
@@ -55,21 +56,17 @@ If that runs cleanly, you're in good shape.
 * ack
 * Findutils
 * GNU tar
-* __Extras__
+
+#### __Extras__
+
 * iTerm
-* iTerm Solarized Dark Shell Theme
 * ZSH
 * Oh-My-ZSH!
 * Rails (latest 4.x.y release)
 * Postgres.app (works better with Rails than CLI postgres)
-* Sublime Text 3
-* Alfred
-* Vagrant Manager (note: see if vagrant is installed)
 * Dropbox
-* Google Drive Sync
 * Google Chrome
 * Mozilla Firefox
-* Karabiner (used to remap keyboard)
 * TeamViewer
 
 ## Future Plans
